@@ -1,0 +1,16 @@
+name: MapToImage
+version: '${minecraft.plugin.version}'
+main: de.themoep.maptoimage.MapToImage
+description: '${project.description}'
+authors: [Phoenix616]
+commands:
+  maptoimage:
+    description: Main plugin command.
+    usage: /<command> [<id> [<end>]|all]
+    aliases: [mapstoimage]
+    permission: mapstoimage.command
+    permission-message: You don't have the permission <permission>
+permissions:
+  mapstoimage.command:
+      description: Gives permission to the plugin command
+      default: op
